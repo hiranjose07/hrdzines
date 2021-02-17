@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Locomotive Scroll | Detection of elements in viewport & smooth scrolling with parallax effects.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="theme-color" content="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+
+        <link rel="stylesheet" href="./css/loc-main.css">
+      
+    </head>
+    <body>
+
+        <div class="o-scroll" id="js-scroll" data-scroll-container>
+
+            <section class="c-section" data-scroll-section>
+                <div class="o-container" id="speed-control">
+                    <div class="o-layout -gutter" style="height: 100vh; background-color: #000000;">
+                       
+                        <div class="o-layout_item" style="width: 100%">
+                            <h1 class="c-header_title o-h1" data-scroll style="color: #ffffff;">
+                                <span class="c-header_title_line">
+                                    <span data-scroll data-scroll-speed="3" data-scroll-position="top">Locomotive</span>
+                                </span>
+                                <span class="c-header_title_line">
+                                    <span data-scroll data-scroll-speed="2" data-scroll-position="top">Scroll</span>
+                                </span>
+                                <span class="c-header_title_line -version u-white">
+                                    <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top" data-scroll-delay="0.05">v</span><span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top" data-scroll-delay="0.05">4</span><span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top" data-scroll-delay="0.05">.</span><span class="o-h1" data-scroll data-scroll-speed="4" data-scroll-position="top" data-scroll-delay="0.05">0</span>
+                                </span>
+                            </h1> 
+                            <div class="o-layout_item" style="width: 100%;">
+                                <div class="c-section_infos -padding" data-scroll data-scroll-speed="3" data-scroll-call="test" style="padding-top: 0px;">
+                                    <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                        <h3>
+                                            01. <br>
+                                            Speed control
+                                        </h3>
+                                        <div class="c-sections_infos_text u-text">
+                                            <p>
+                                                Each element can be animated at a different speed. You get to choo-choo-choose!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout -gutter -bottom">
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="c-speed-block" data-scroll data-scroll-speed="4">
+                                <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                    <div class="o-image" data-scroll data-scroll-speed="-4.5">
+                                        <img class="c-speed-block_image" src="./Images/vold.webp" alt="Locomotive image from unsplash">
+                                    </div>
+                                </div>
+                                <p class="c-speed-block_title" data-scroll>
+                                    Speed x4
+                                </p>
+                                <span class="c-speed-block_bubble -right" data-scroll data-scroll-speed="1" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    1x
+                                </span>
+                                <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="3" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                    3x
+                                </span>
+                            </div>
+                        </div>
+                        <div class="o-layout_item u-3/5@from-medium">
+                            <div class="o-layout u-text-right">
+                                <div class="o-layout_item u-1/2@from-medium">
+                                    <div class="c-speed-block -margin" data-scroll data-scroll-speed="6">
+                                        <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+                                            <div class="o-image" data-scroll data-scroll-speed="-2">
+                                                <img class="c-speed-block_image" src="./Images/raia.webp" alt="Locomotive image from unsplash">
+                                            </div>
+                                        </div>
+                                        <p class="c-speed-block_title" data-scroll>
+                                            Speed x6
+                                        </p>
+                                        <span class="c-speed-block_bubble -left -top" data-scroll data-scroll-speed="2" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            2x
+                                        </span>
+                                        <span class="c-speed-block_bubble -right" data-scroll data-scroll-speed="6" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            6x
+                                        </span>
+                                        <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="9" data-scroll-call="dynamicColor" data-scroll-repeat>
+                                            9x
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+        </div>
+
+      
+
+        <script src="./js/loc-main.js"></script>
+    </body>
+</html>
