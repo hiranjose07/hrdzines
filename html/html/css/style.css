@@ -294,3 +294,83 @@ ul.skill-ul{    list-style: none;
     vertical-align: middle;
     width: 4vw;
     margin-left: .5vw;}
+
+
+    
+li, a, p.back-prev, p.back-prev::after, p.view-skill::after {  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;}
+a:hover, li:hover, p.back-prev:hover, p.view-skill:hover, p.works-button:hover{color: #ffe600 !important;}
+p.back-prev:hover::after, p.view-skill:hover::after, p.works-button:hover::after {width: 7vw; background-color: #ffe600;}
+p.click{top: 1.3vw !important;
+line-height: 1vw;}
+/*.section-1, .section-2, .section-3, .section-4{display: none;}*/
+.for-scroll{margin: 0px; height: 100vh; overflow: hidden;}
+.scroll-for-text{margin-top: 4vw;}
+.intro-quote{position: fixed; height: 100vh; width: 100%; overflow: hidden; z-index: 100; background-color: #000000;}
+.intro-quote p{position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);     color: #ffffff;
+font-family: 'Graphik-lite';
+font-size: 1.4vw;}
+.intro-quote img{position: absolute;
+top: 50%;
+left: 20%;
+transform: translate(-50%, -50%); width: 100%;   -webkit-transition: all 4s ease-in-out;
+  -moz-transition: all 4s ease-in-out;
+  -o-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;}
+  .intro-text.text-delay{opacity: 0;  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;}
+  .contact-me{    position: relative;
+z-index: 120;}
+  .view-all{
+    background-color: #ffffff;
+width: 3vw;
+height: 3vw;
+margin-bottom: .7vw;
+border-radius: 100vw; position: relative; opacity: 0.3; -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; opacity: 0;
+  }
+  .view-all img{    width: 2vw;
+position: absolute;
+top: 50%;
+right: 0;
+transform: translate(-26%, -50%);}
+
+  .view-all:hover{opacity: .5 !important;}
+  .call-icon{    position: fixed;
+bottom: 1vw;
+right: 2vw;}
+.mail-icon{    position: fixed;
+bottom: 5vw;
+right: 2vw;}
+.resume-icon{    position: fixed;
+bottom: 9vw;
+right: 2vw;}
+p.contact-hover{      color: #ffffff !important;
+position: relative !important;
+font-family: 'Graphik-lite' !important;
+margin-right: 1vw !important;
+float: right;
+margin-top: -2vw;
+min-width: 13vw;
+text-align: right !important;
+padding-right: 1vw;
+}
+img.scroll-down{
+left: 50%;
+position: absolute;
+bottom: -1vw;
+opacity: .5;
+width: 6.5vw;
+transform: translate(-50%, -50%);
+z-index: 999999;}
+
+
