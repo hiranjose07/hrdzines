@@ -146,14 +146,54 @@ a.phone-no {
 }
 .footer-menu ul {
   font-size: 17px;}
+  ul.skill-ul {
+    font-size: 46px;
+    line-height: 65px;
+}
+.skill-7 {
+  min-height: 100vh;
+  border-right: 1px solid #272727;
+  padding: 120px 50px;
+}
+
+.skill-content {
+  font-size: 16px;
+  padding: 0;
+}
+p.my-name {
+font-size: 25px;
+}
+p.back-prev {
+font-size: 30px;
+margin-right: 90px;
+margin-bottom: 40px;
+}
+p.back-prev::after {
+height: 1px;
+width: 50px;
+margin-left: 10px;
+}
+.col-sm-5.skill-5{padding: 120px 50px;}
 }
 
 /*max-992*/
 @media only screen and (max-width: 992px) {
+  
   .about-row {
     padding: 50px 30px 30px 150px;
 
   }
+  .skill-7 {
+    max-width: 100%; min-width: 100%;
+    border: hidden !important;
+    padding: 120px 50px 50px 50px;
+    text-align: center; min-height: auto;
+}
+.col-sm-5.skill-5{
+  min-width: 100%;
+    max-width: 100%;
+    padding: 0px 90px;
+}
 
 }
 /*max-768*/
