@@ -165,6 +165,12 @@ a.phone-no {
 p.bg-text {
   left: 10px;}
 .bg-text.sm-scroll{display: none !important;}
+.section-4 {
+  padding: 10vw;
+}
+.main-button {
+  font-size: 6vw;
+}
   }
   
   /*max-750*/
