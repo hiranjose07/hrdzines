@@ -98,6 +98,54 @@ p.view-skill::after {
   margin-left: 10px;
   width: 150px;
 }
+
+.section-3{padding: 110px 130px; margin-top: -60px !important;}
+p.work-hd {
+  font-size: 19px;
+}
+p.work-caption {
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 30px !important;
+  
+}
+p.works-button {
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+p.works-button::after {
+  content: "";
+  height: 1px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.section-4 {
+  min-height:auto;
+  padding: 100px;
+}
+.main-button {
+  font-size: 46px;}
+  .row-contact {
+    margin-top: 30px;
+}
+p.address-text {
+  font-size: 14px;
+  line-height: 25px;
+}
+a.social-icon img {
+  width: 27px;
+  margin: 15px 0;
+}
+p.terms {
+  font-size: 13px;
+}
+a.phone-no {
+  font-size: 30px;
+}
+.footer-menu ul {
+  font-size: 17px;}
 }
 
 /*max-992*/
@@ -116,7 +164,7 @@ p.view-skill::after {
 }
 p.bg-text {
   left: 10px;}
-
+.bg-text.sm-scroll{display: none !important;}
   }
   
   /*max-750*/
@@ -139,7 +187,11 @@ p.section-1-text:nth-child(2) {
   margin: 30px 0 25px 0;
 }
   }
-
+ /*max-500*/
+  @media only screen and (max-width: 500px) {
+    .section-3{padding: 60px;}
+  
+}
   /*max-400*/
   @media only screen and (max-width: 400px) {
     p.section-1-text:nth-child(2) {
