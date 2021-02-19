@@ -223,6 +223,15 @@ margin-left: 10px;
 }
 /*max-768*/
 @media only screen and (max-width: 768px) {
+  .work-banner-row{background-position: center;}
+  .section-1{background-image: url(../Images/sec-bg-mobile.png);}
+  .section-2 {
+    background-position-y: bottom;
+    background-position-x: right;}
+    .section-4 {
+      background-size: 110%;
+      background-position-x: 10vw;
+  }
   span.say-hello{font-size: 30vw;}
   .about-row {
     padding: 50px 30px 30px 50px;
@@ -261,6 +270,9 @@ p.section-1-text:nth-child(2) {
   }
  /*max-575*/
  @media only screen and (max-width: 575px) {
+  span.say-hello {
+    background-color: rgba(255, 255, 255, .15);
+  }
     
   ul.skill-ul {text-align: center;
 }
