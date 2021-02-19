@@ -253,7 +253,7 @@ p.work-hd{    color: #ffffff;
 .row-work-12 .col-sm-5:nth-of-type(even) {margin-bottom: 6vw;  margin-top: 6vw; padding-left: 5%;}
 .row-work-12 .col-sm-5:nth-of-type(odd) { padding-right: 5%;}
 
-.skills-container{min-height: 100vh; max-height: 100vh; overflow-y: auto; background-color: #000000; position: fixed; width: 100%;}
+.skills-container{min-height: 100vh; max-height: 100vh; overflow-y: auto; background-color: #000000; position: fixed; width: 100%; z-index: 999999;}
 .skill-7{min-height: 100vh; border-right: .1vw solid #272727;  padding: 8vw 3vw;}
 ul.skill-ul{    list-style: none;
   color: #585858;
