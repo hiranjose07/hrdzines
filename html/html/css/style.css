@@ -90,7 +90,7 @@
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;}
-  .about-img-cover{    width: 85%;
+  .about-img-cover{    width: 100%;
     height: 25vw; margin-bottom: .8vw;}
 img.about-img{    width: 100%;
   height: 25vw;}
@@ -250,8 +250,8 @@ p.work-hd{    color: #ffffff;
 
 .works-list{min-height: 100vh; background-color: #000000;}
 .row-work-12{padding: 5vw 17vw 3vw 17vw;}
-.row-work-12 .col-sm-5:nth-of-type(even) {margin-bottom: 6vw;}
-.row-work-12 .col-sm-5:nth-of-type(even) { margin-top: 6vw;}
+.row-work-12 .col-sm-5:nth-of-type(even) {margin-bottom: 6vw;  margin-top: 6vw; padding-left: 5%;}
+.row-work-12 .col-sm-5:nth-of-type(odd) { padding-right: 5%;}
 
 .skills-container{min-height: 100vh; background-color: #000000;}
 .skill-7{min-height: 100vh; border-right: .1vw solid #272727;  padding: 8vw 3vw;}
