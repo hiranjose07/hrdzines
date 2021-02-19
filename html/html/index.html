@@ -328,6 +328,10 @@
 </div>
 
 <!--------------------Menu-skills------------------->
+
+
+</div>
+</div>
 <div class="container-fluid skills-container">
   <div class="row">
     <div class="col-sm-7 skill-7">
@@ -373,10 +377,6 @@
     </div>
   </div>
 </div>
-
-</div>
-</div>
-
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -516,9 +516,11 @@ init_pointer({
   });
 
   $('p.back-prev').bind('click', function(event) {
-     $(".skills-container, .work-bg").hide();
+    $(".skills-container, .work-set, .work-bg").hide();
  $(".section-col-12").fadeIn();
- smoothScrollBar.scrollTo(0, 10, 100);
+    smoothScrollBar.scrollTo(0, 10, 100);
+
+
   });
   $('.back-home').bind('click', function(event) {
      $(".skills-container, .work-set, .work-bg").hide();
