@@ -9,15 +9,52 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./fonts/Graphik-Light-Web.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Graphik-Light-Web.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/loc-main.css">
-    <link rel="stylesheet" href="./css/pointer.css">    
-    <link rel="stylesheet" href="./css/style-queries.css">
     <title>HR</title>
     <style>
-.work-bg, .work-set, .skills-container{display: none;}
+  .section-1{ min-height: 100vh; background-size: cover; padding: 0px;}
+  .section-2{  min-height: 100vh; background-size: cover; padding: 0px;}
+  
+    .o-image .img {
+    width: 100%;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: opacity 1.2s cubic-bezier(.215,.61,.355,1),transform 1.2s cubic-bezier(.215,.61,.355,1);
+}
 
-.rotate-div{animation-name: spin;
+.o-image.is-inview .img {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0s;
+}
+.c-speed-block_image{margin: 0px !important;}
+/*.o-image_wrapper{min-height: 100vh !important;}*/
+.o-container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;}
+    .o-image{opacity: 1;}
+    .c-speed-block{margin: 0px !important;}
+    ul.menu{    position: fixed;
+    z-index: 999999;
+    color: #ffffff;
+    font-family: 'Graphik';
+    font-size: .8vw;
+    text-transform: uppercase;
+    letter-spacing: .2vw;
+    right: 12vw;
+    top: 6vw;}
+    .o-image_wrapper{background: none;}
+    ul.menu li{display: inline-block; margin-left: 1vw;}
+.c-speed-block.-margin.cfg{padding-top: 12vw !important; width: 23%; margin-left: 15vw !important;}
+
+
+
+
+
+
+    .rotate-div{animation-name: spin;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
@@ -30,29 +67,6 @@
     }
 }
 
-#my-scrollbar{
-  position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-#pointer-ring { -webkit-transition: width .4s, height .4s, background-color .4s linear !important;
-          -moz-transition: width .4s, height .4s, background-color .4s linear !important;
-          -o-transition: width .4s, height .4s, background-color .4s linear !important;
-          transition: width .4s, height .4s, background-color .4s linear !important;
-         }
-         .sc{border: hidden !important;}
-
-         #pointer-ring p {    position: absolute;
-    left: 0;
-    right: 0;
-    color: #ffffff;
-    font-size: .9vw;
-    text-align: center;
-    font-family: 'Graphik-regular';
-    top: 1.5vw;
-}
     </style>
 
 
@@ -60,18 +74,6 @@
 
   </head>
   <body>
-    <div class="follower"></div>
-    <div class="contact-me">
-      <a class='' href='tel:+917403476880'> <div class="call-icon view-all"><img src="./Images/phone.png"></div></a>
-      <a href='mailto:contact.hiranjose@gmail.com'><div class="mail-icon view-all"><img src="./Images/mail.png"></div></a>
-      <div class="resume-icon view-all"><img src="./Images/resume.png"></div>
-    </div>
-    <div class="intro-quote">
-      <p>“Good art inspires; Good design motivates.” - Otl Aicher</p>
-      <img class="intro-overlay" src="./Images/intro-bg.png">
-    </div>
-    <div id="my-scrollbar">
-      <div class="scroll-content">
     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1245.19 1140.45" style="    width: 4.7vw;
     position: absolute;
     left: 4vw;
@@ -92,457 +94,343 @@
     </svg>
     
     <ul class="menu">
-      <li class="back-home">Home</li>
-      <li class="go-to-about">About</li>
-      <li class="go-to-works">Works</li>
+      <li>About</li>
+      <li>Works</li>
     </ul>
+
+    
+<div class="o-scroll" id="js-scroll" data-scroll-container >
+  <section data-scroll-section>
+    <div class="o-container" id="speed-control">
+      <svg id="Layer_1" data-name="Layer 1" class="rotate-div" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1305.62 1305.62" style="position: absolute;
+      width: 25vw;
+      z-index: 999999;
+      top: 35vw;
+      right: -12vw;
+      fill: #ffffff;">
+        <defs>
+          <style>
+            .cls-1 {
+              font-size: 75px;
+            }
+      
+            .cls-1, .cls-2, .cls-3 {
+              font-family: Graphik-Extralight, Graphik;
+              font-weight: 200; fill: #ffffff;
+            }
+      
+            .cls-2 {
+              font-size: 110px;
+            }
+      
+            .cls-3 {
+              font-size: 100px;
+            }
+          </style>
+        </defs>
+        <title>circle</title>
+        <text class="cls-1" transform="translate(539.54 105.16) rotate(-8.89)">H</text>
+        <text class="cls-1" transform="translate(591.07 97.29) rotate(-4.14)">T</text>
+        <text class="cls-1" transform="translate(631.66 93.81) rotate(1.07)">M</text>
+        <text class="cls-1" transform="matrix(0.99, 0.11, -0.11, 0.99, 694.19, 95.47)">L</text>
+        <text class="cls-1" transform="translate(732.69 99.6) rotate(10.25)">5</text>
+        <text class="cls-1" transform="matrix(0.97, 0.23, -0.23, 0.97, 772.21, 107.03)"> </text>
+        <text class="cls-1" transform="matrix(0.97, 0.26, -0.26, 0.97, 788.99, 110.96)"> </text>
+        <text class="cls-1" transform="matrix(0.96, 0.29, -0.29, 0.96, 805.63, 115.4)"> </text>
+        <text class="cls-1" transform="translate(822.11 120.36) rotate(18.54)"> </text>
+        <text class="cls-1" transform="translate(838.46 125.83) rotate(20.32)"> </text>
+        <text class="cls-2" transform="matrix(0.93, 0.38, -0.38, 0.93, 854.59, 131.76)">.</text>
+        <text class="cls-1" transform="matrix(0.91, 0.41, -0.41, 0.91, 874.02, 139.75)"> </text>
+        <text class="cls-1" transform="translate(889.74 146.83) rotate(26.04)"> </text>
+        <text class="cls-1" transform="matrix(0.88, 0.47, -0.47, 0.88, 905.23, 154.39)"> </text>
+        <text class="cls-1" transform="matrix(0.87, 0.49, -0.49, 0.87, 920.47, 162.43)"> </text>
+        <text class="cls-1" transform="translate(935.45 170.92) rotate(31.35)"> </text>
+        <text class="cls-1" transform="matrix(0.82, 0.57, -0.57, 0.82, 950.11, 179.41)">B</text>
+        <text class="cls-1" transform="matrix(0.78, 0.63, -0.63, 0.78, 985.65, 203.75)">o</text>
+        <text class="cls-1" transform="translate(1019.01 230.55) rotate(43.19)">o</text>
+        <text class="cls-1" transform="translate(1050.15 260.14) rotate(46.59)">t</text>
+        <text class="cls-1" transform="translate(1066.47 277.17) rotate(49.48)">s</text>
+        <text class="cls-1" transform="translate(1088.18 302.74) rotate(52.42)">t</text>
+        <text class="cls-1" transform="matrix(0.58, 0.82, -0.82, 0.58, 1102.86, 321.79)">r</text>
+        <text class="cls-1" transform="translate(1116.3 340.49) rotate(57.97)">a</text>
+        <text class="cls-1" transform="translate(1136.66 372.77) rotate(62.2)">p</text>
+        <text class="cls-1" transform="translate(1157.06 412.23) rotate(65.36)"> </text>
+        <text class="cls-1" transform="translate(1164.24 427.89) rotate(67.14)"> </text>
+        <text class="cls-1" transform="translate(1170.95 443.77) rotate(68.92)"> </text>
+        <text class="cls-1" transform="translate(1177.15 459.83) rotate(70.7)"> </text>
+        <text class="cls-1" transform="translate(1182.85 476.1) rotate(72.48)"> </text>
+        <text class="cls-2" transform="matrix(0.27, 0.96, -0.96, 0.27, 1188.06, 492.49)">.</text>
+        <text class="cls-3" transform="matrix(0.23, 0.97, -0.97, 0.23, 1193.7, 512.64)"> </text>
+        <text class="cls-3" transform="matrix(0.19, 0.98, -0.98, 0.19, 1198.99, 535.01)"> </text>
+        <text class="cls-3" transform="translate(1203.34 557.55) rotate(81.46)"> </text>
+        <text class="cls-3" transform="translate(1206.77 580.29) rotate(83.82)"> </text>
+        <text class="cls-3" transform="matrix(0.07, 1, -1, 0.07, 1209.25, 603.11)"> </text>
+        <text class="cls-1" transform="translate(1210.87 625.51) rotate(89.07)">C</text>
+        <text class="cls-1" transform="translate(1211.14 678.87) rotate(94.86)">S</text>
+        <text class="cls-1" transform="translate(1207.58 721.34) rotate(99.22)">S</text>
+        <text class="cls-1" transform="translate(1200.67 763.8) rotate(103.5)">3</text>
+        <text class="cls-1" transform="translate(1191.02 802.76) rotate(106.45)"> </text>
+        <text class="cls-1" transform="translate(1186.15 819.28) rotate(108.23)"> </text>
+        <text class="cls-1" transform="translate(1180.77 835.66) rotate(110.01)"> </text>
+        <text class="cls-1" transform="matrix(-0.37, 0.93, -0.93, -0.37, 1174.88, 851.84)"> </text>
+        <text class="cls-1" transform="matrix(-0.4, 0.92, -0.92, -0.4, 1168.49, 867.84)"> </text>
+        <text class="cls-2" transform="translate(1161.66 883.6) rotate(115.54)">.</text>
+        <text class="cls-1" transform="matrix(-0.46, 0.89, -0.89, -0.46, 1152.57, 902.56)"> </text>
+        <text class="cls-1" transform="translate(1144.62 917.85) rotate(119.28)"> </text>
+        <text class="cls-1" transform="translate(1136.2 932.88) rotate(121.05)"> </text>
+        <text class="cls-1" transform="translate(1127.32 947.65) rotate(122.81)"> </text>
+        <text class="cls-1" transform="matrix(-0.57, 0.82, -0.82, -0.57, 1118, 962.11)"> </text>
+        <text class="cls-1" transform="translate(1108.39 976.27) rotate(126.91)">J</text>
+        <text class="cls-1" transform="matrix(-0.65, 0.76, -0.76, -0.65, 1091.58, 999.13)">q</text>
+        <text class="cls-1" transform="matrix(-0.71, 0.71, -0.71, -0.71, 1062.8, 1032.66)">u</text>
+        <text class="cls-1" transform="translate(1033.26 1062.2) rotate(139.17)">e</text>
+        <text class="cls-1" transform="matrix(-0.79, 0.61, -0.61, -0.79, 1002.74, 1088.29)">r</text>
+        <text class="cls-1" transform="translate(983.43 1103.37) rotate(145.58)">y</text>
+        <text class="cls-1" transform="translate(953.19 1123.82) rotate(148.32)"> </text>
+        <text class="cls-1" transform="translate(938.54 1132.87) rotate(150.09)"> </text>
+        <text class="cls-1" transform="translate(923.59 1141.48) rotate(151.86)"> </text>
+        <text class="cls-1" transform="translate(908.4 1149.61) rotate(153.64)"> </text>
+        <text class="cls-1" transform="translate(892.96 1157.27) rotate(155.41)"> </text>
+        <text class="cls-2" transform="matrix(-0.92, 0.38, -0.38, -0.92, 877.36, 1164.45)">.</text>
+        <text class="cls-1" transform="translate(857.96 1172.5) rotate(159.35)"> </text>
+        <text class="cls-1" transform="translate(841.85 1178.58) rotate(161.13)"> </text>
+        <text class="cls-1" transform="translate(825.55 1184.16) rotate(162.91)"> </text>
+        <text class="cls-1" transform="matrix(-0.96, 0.26, -0.26, -0.96, 809.07, 1189.23)"> </text>
+        <text class="cls-1" transform="translate(792.46 1193.78) rotate(166.48)"> </text>
+        <text class="cls-1" transform="matrix(-0.98, 0.19, -0.19, -0.98, 775.86, 1197.91)">J</text>
+        <text class="cls-1" transform="matrix(-0.99, 0.13, -0.13, -0.99, 747.99, 1203.58)">a</text>
+        <text class="cls-1" transform="translate(710.85 1208.66) rotate(176.05)">v</text>
+        <text class="cls-1" transform="translate(674.89 1210.99) rotate(179.07)">a</text>
+        <text class="cls-1" transform="translate(636.62 1211.51) rotate(-176.14)">S</text>
+        <text class="cls-1" transform="translate(593.68 1208.6) rotate(-171.9)">c</text>
+        <text class="cls-1" transform="matrix(-0.98, -0.2, 0.2, -0.98, 553.83, 1202.71)">r</text>
+        <text class="cls-1" transform="matrix(-0.97, -0.23, 0.23, -0.97, 529.94, 1197.8)">i</text>
+        <text class="cls-1" transform="matrix(-0.96, -0.28, 0.28, -0.96, 515.91, 1194.88)">p</text>
+        <text class="cls-1" transform="matrix(-0.94, -0.34, 0.34, -0.94, 473.44, 1182.03)">t</text>
+        <text class="cls-1" transform="translate(450.8 1173.73) rotate(-157.88)"> </text>
+        <text class="cls-1" transform="translate(434.82 1167.25) rotate(-156.1)"> </text>
+        <text class="cls-1" transform="matrix(-0.9, -0.43, 0.43, -0.9, 419.07, 1160.27)"> </text>
+        <text class="cls-1" transform="matrix(-0.89, -0.46, 0.46, -0.89, 403.55, 1152.82)"> </text>
+        <text class="cls-1" transform="translate(388.26 1144.88) rotate(-150.78)"> </text>
+        <text class="cls-2" transform="translate(373.24 1136.53) rotate(-148.82)">.</text>
+        <text class="cls-2" transform="matrix(-0.83, -0.55, 0.55, -0.83, 355.29, 1125.73)"> </text>
+        <text class="cls-2" transform="translate(334.23 1111.78) rotate(-143.86)"> </text>
+        <text class="cls-2" transform="translate(313.81 1096.89) rotate(-141.28)"> </text>
+        <text class="cls-2" transform="translate(294.08 1081.09) rotate(-138.7)"> </text>
+        <text class="cls-1" transform="matrix(-0.71, -0.7, 0.7, -0.71, 275.04, 1064.7)">P</text>
+        <text class="cls-1" transform="matrix(-0.66, -0.75, 0.75, -0.66, 245.86, 1035.93)">h</text>
+        <text class="cls-1" transform="translate(218.19 1004.27) rotate(-126.76)">o</text>
+        <text class="cls-1" transform="matrix(-0.55, -0.84, 0.84, -0.55, 192.68, 969.69)">t</text>
+        <text class="cls-1" transform="matrix(-0.5, -0.87, 0.87, -0.5, 179.71, 950.57)">o</text>
+        <text class="cls-1" transform="matrix(-0.44, -0.9, 0.9, -0.44, 158.57, 913.7)">s</text>
+        <text class="cls-1" transform="matrix(-0.38, -0.93, 0.93, -0.38, 143.73, 883.84)">h</text>
+        <text class="cls-1" transform="matrix(-0.31, -0.95, 0.95, -0.31, 127.78, 844.94)">o</text>
+        <text class="cls-1" transform="translate(114.62 804.28) rotate(-103.36)">p</text>
+        <text class="cls-1" transform="translate(104.7 760.97) rotate(-100.19)"> </text>
+        <text class="cls-1" transform="translate(101.65 744.01) rotate(-98.42)"> </text>
+        <text class="cls-1" transform="translate(99.12 726.96) rotate(-96.65)"> </text>
+        <text class="cls-1" transform="translate(97.12 709.85) rotate(-94.89)"> </text>
+        <text class="cls-1" transform="translate(95.64 692.66) rotate(-93.14)"> </text>
+        <text class="cls-2" transform="translate(94.66 675.51) rotate(-91.2)">.</text>
+        <text class="cls-1" transform="translate(94.21 654.54) rotate(-89.07)"> </text>
+        <text class="cls-1" transform="translate(94.45 637.26) rotate(-87.54)"> </text>
+        <text class="cls-1" transform="translate(95.19 620.04) rotate(-85.79)"> </text>
+        <text class="cls-1" transform="matrix(0.1, -0.99, 0.99, 0.1, 96.44, 602.85)"> </text>
+        <text class="cls-1" transform="translate(98.23 585.72) rotate(-82.27)"> </text>
+        <text class="cls-1" transform="translate(99.99 568.92) rotate(-78.84)">U</text>
+        <text class="cls-1" transform="translate(109.59 520.72) rotate(-74.16)">n</text>
+        <text class="cls-1" transform="translate(121.47 480.1) rotate(-71.23)">i</text>
+        <text class="cls-1" transform="translate(126.19 466.2) rotate(-69.71)">l</text>
+        <text class="cls-1" transform="matrix(0.39, -0.92, 0.92, 0.39, 130.97, 452.51)">y</text>
+        <text class="cls-1" transform="translate(145.39 418.98) rotate(-64.31)"> </text>
+        <text class="cls-1" transform="translate(152.85 403.46) rotate(-62.54)"> </text>
+        <text class="cls-1" transform="matrix(0.49, -0.87, 0.87, 0.49, 160.79, 388.17)"> </text>
+        <text class="cls-1" transform="translate(169.2 373.13) rotate(-59)"> </text>
+        <text class="cls-1" transform="translate(178.07 358.35) rotate(-57.23)"> </text>
+        <text class="cls-2" transform="translate(187.34 343.88) rotate(-55.28)">.</text>
+        <text class="cls-1" transform="matrix(0.6, -0.8, 0.8, 0.6, 199.33, 326.62)"> </text>
+        <text class="cls-1" transform="matrix(0.62, -0.78, 0.78, 0.62, 209.63, 312.78)"> </text>
+        <text class="cls-1" transform="matrix(0.65, -0.76, 0.76, 0.65, 220.32, 299.3)"> </text>
+        <text class="cls-1" transform="matrix(0.67, -0.74, 0.74, 0.67, 231.44, 286.13)"> </text>
+        <text class="cls-1" transform="translate(242.96 273.3) rotate(-46.29)"> </text>
+        <text class="cls-1" transform="matrix(0.73, -0.68, 0.68, 0.73, 254.32, 260.76)">A</text>
+        <text class="cls-1" transform="matrix(0.78, -0.62, 0.62, 0.78, 288.8, 228.69)">E</text>
+        <text class="cls-1" transform="translate(320.8 202.54) rotate(-33.19)">M</text>
+        <text class="cls-1" transform="translate(373.74 168.84) rotate(-29.12)"> </text>
+        <text class="cls-1" transform="translate(388.8 160.45) rotate(-27.34)"> </text>
+        <text class="cls-1" transform="matrix(0.9, -0.43, 0.43, 0.9, 404.09, 152.54)"> </text>
+        <text class="cls-1" transform="translate(419.63 145.09) rotate(-23.8)"> </text>
+        <text class="cls-1" transform="matrix(0.93, -0.37, 0.37, 0.93, 435.4, 138.13)"> </text>
+        <text class="cls-2" transform="matrix(0.94, -0.34, 0.34, 0.94, 451.31, 131.66)">.</text>
+        <text class="cls-1" transform="translate(471.05 124.48) rotate(-18.07)"> </text>
+        <text class="cls-1" transform="matrix(0.96, -0.28, 0.28, 0.96, 487.42, 119.13)"> </text>
+        <text class="cls-1" transform="matrix(0.97, -0.25, 0.25, 0.97, 503.97, 114.29)"> </text>
+        <text class="cls-1" transform="translate(520.65 109.97) rotate(-12.73)"> </text>
+        <text class="cls-1" transform="translate(537.44 106.17) rotate(-10.95)"> </text>
+      </svg>
+<!------------------------------------------------------->
+
+<div class="container-fluid section-1 img">
+  <div class="c-speed-block" data-scroll data-scroll-speed="-3">
+    <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+        <div class="o-image" data-scroll data-scroll-speed="-2">
+          <div class="img c-speed-block_image s1img" style="background-image: url(./images/bg.png);     width: 100%;
+          min-height: 100vh;background-size: contain;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: 50%;" >
+
+<div class="bg-2"   data-scroll data-scroll-speed="-1"   style="background-image: url(./\/Images/bg-2.png); min-height: 100vh; width: 100%; background-size: cover; background-repeat: no-repeat;" > 
+ <div  class="img c-speed-block_image s1img" style="background-image: url(./images/bg.png);     width: 100%;
+ min-height: 100vh;background-size: contain;
+background-color: rgb(255 255 255 / 6%);
+background-repeat: no-repeat;
+background-position: 50%;-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;display: flex;
+  align-items: center;
+  justify-content: center;" >
+<p style="    font-size: 23vw;
+text-align: center; font-family: Graphik-regular; line-height: 0px;">Hello!!</p>
+
+</div>
+<span data-scroll  data-scroll-speed="2" style="    font-size: 2.8vw;
+color: #ffffff;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);width: 100%;
+top: 48%;
+font-family: 'Graphik-lite';
+opacity: 1;
+font-weight: 100;
+" >
+<p  style="position: absolute;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+left: 50%;
+top: 46%;">
+
+  I am Hiran Jose
+
+</p>
+  </span>
+<p style="    color: #ffffff;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+left: 50%;
+top: 55%;
+font-family: 'Graphik-lite';
+opacity: 1;
+font-size: 4.4vw;
+font-weight: 100;">
+  Creative Developer
+</p>
+<p style="   color: #ffffff;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+left: 50.5%;
+    top: 62.5%;
+    font-family: 'Graphik-lite';
+    opacity: 1;
+    font-size: 1.5vw;
+    font-weight: 100;
+    letter-spacing: 0.85vw;
+    text-transform: uppercase;">
+  Front-end/UI Developer
+</p>
+
+</div>
+<!--<p style="    font-size: 23vw;
+text-align: center; position: relative; margin-top: -500px;">Hello!!</p>  --->      </div>
+           
+        </div>
+
+      
+    </div>
+
+</div>
+</div>
+
+<div class="container-fluid section-2 img">
+  <div class="c-speed-block" data-scroll data-scroll-speed="0">
+    <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+        <div class="o-image" data-scroll data-scroll-speed="-2">
+          <div class="img c-speed-block_image s2img" style="background-image: url(./images/hr-designs-about-background.jpg);     width: 100%;
+          min-height: 100vh; background-size: cover;">
+
+
+<div class="c-speed-block -margin cfg" data-scroll data-scroll-speed="3">
+  <div class="o-image_wrapper" data-scroll data-scroll-call="dynamicBackground" data-scroll-repeat>
+      <div class="o-image" data-scroll data-scroll-speed="-2">
+          <img class="c-speed-block_image" src="./Images/raia.webp" alt="Locomotive image from unsplash" style="height: 25vw;">
+      </div>
+  </div>
+  
+</div>
+
+<span data-scroll  data-scroll-speed="3" style="    font-size: 1vw;
+color: #ffffff;
+top: 31vw;
+font-family: 'Graphik-lite';
+opacity: 1;
+font-weight: 100; position: absolute;
+" >
+<p  style="position: absolute;
+left: 15vw; width: 23vw;">
+About me
+</p>
+  </span>
+
+  <span data-scroll  data-scroll-speed="3" style="    font-size: 1vw;
+color: #ffffff; position: absolute;
+top: 33vw;
+font-family: 'Graphik-lite';
+opacity: 1;
+font-weight: 100;
+" >
+<p  style="position: absolute;
+left: 15vw; width: 23vw;">
+Hiran jose<br/>
+Front - end / U I Developer
+</p>
+  </span>
+
+
+  
+  <span data-scroll  data-scroll-speed="3" style="    font-size: 1vw;
+color: #ffffff; position: absolute;
+top: 36vw;
+font-family: 'Graphik-lite';
+opacity: 1;
+font-weight: 100;
+" >
+<p  style="position: absolute;
+left: 15vw; width: 23vw;">
+HTML 5 . Bootstrap . CSS 3 . Jquery . Javascript<br/>
+. Sharepoint . Photoshop . Adobe XD . AEM . Unily
+</p>
+  </span>
+
+</div>
+</div>
 
 
 <!------------------------------------------------------->
-<div class="section-col-12">
-<div class="container-fluid section-1 sm-scroll"  data-type-animation="rellax" data-rellax-speed="10">
-  <div class="row sub-section sm-scroll"  data-type-animation="rellax" data-rellax-speed="8">
-
-    <div class="col-sm-12 content-banner">
-      <span class="say-hello">Hello!!</span>
-      <div class="intro-text text-delay delay-60">
-        <p class="section-1-text sm-scroll"  data-type-animation="rellax" data-rellax-speed="-10">
-
-          I am Hiran Jose
-  
-        </p>
-        <p class="section-1-text sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5">
-          Creative Developer
-        </p>
-        <p class="section-1-text sm-scroll"  data-type-animation="rellax" data-rellax-speed="-4">
-          Front-end/UI Developer
-        </p>
-      </div>
-     
-
-    </div>
-
-  </div>
-  <div class="scroll-image">
-  <img class="scroll-down" src="./Images/scroll.gif">
 </div>
+</section>
 </div>
-
-<div class="container-fluid section-2 about-section">
-  <p class="bg-text sm-scroll"  data-type-animation="rellax" data-rellax-speed="-15">About</p>
-<div class="row about-row">
-  <div class="col-sm-5 about-image sm-scroll"  data-type-animation="rellax" data-rellax-speed="-10" style="overflow:hidden;">
-    
-    <div class="about-img-cover sm-scroll"  data-type-animation="rellax" data-rellax-speed="10" style="overflow:hidden;">
-    <img class="about-img sm-scroll click-to-skill"  data-type-animation="rellax" data-rellax-speed="15" src="./Images/raia.webp">
-  </div>
-  <p class="about-text-0 about-hr-txt">About Me</p>
- <p class="about-text-1 about-hr-txt">Hiran jose</p>
- <p class="about-text-2 about-hr-txt">Front - end / U I Developer</p>
- <p class="about-text-3 about-hr-txt">HTML 5 . Bootstrap . CSS 3 . Jquery . Javascript. <br/>Sharepoint . Photoshop . Adobe XD . AEM . Unily</p>
-
-  </div>
-
-  <div class="col-sm-7">
-    <p class="about-des sm-scroll"  data-type-animation="rellax" data-rellax-speed="10">
-      Hi, I'm Hiran. I'm a front end web designer/developer with 7 years experience. My main areas of my expertise are HTML(5), CSS(3) and Jquery. I create clean, professional, functional websites. I’m a skilled in many areas of front end design and development.
-     
-      <br/><br/>
-      I currently am working as a front end web designer/developer at EY.
-      
-      I like to write semantic, Responsive,  cross browser compatible code by hand that is re-useable, maintainable and easy to understand.
-    </p>
-    <p class="view-skill sm-scroll"  data-type-animation="rellax" data-rellax-speed="7">
-      My Skill set
-      </p>
-  </div>
-</div>
-</div>
-
-<div class="container-fluid section-3 work-section sm-scroll"  data-type-animation="rellax" data-rellax-speed="10" style="margin-top:-5vw">
-<p class="work-hd sm-scroll"  data-type-animation="rellax" data-rellax-speed="20">/ My Works /</p>
-<!---<p class="work-caption sm-scroll home-caption"  data-type-animation="rellax" data-rellax-speed="10">Here is how <br/> 
-  My unique<br/>
-  model works .</p>---->
-  <p class="work-caption sm-scroll home-caption"  data-type-animation="rellax" data-rellax-speed="10">Overview<br/> 
-    of my latest<br/>
-    works.</p>
-  <p class="works-button sm-scroll"  data-type-animation="rellax" data-rellax-speed="-20">click here to view</p>
-</div>
-
-
-<div class="container-fluid section-4 contact-section sm-scroll"  data-type-animation="rellax" data-rellax-speed="-10">
-  <a class="main-button sm-scroll"  data-type-animation="rellax" data-rellax-speed="-8" href="mailto:contact.hiranjose@gmail.com">contact.hiranjose@gmail.com</a>
-  <div class="row row-contact">
-    <div class="col-sm-4 address-contact sm-scroll"  data-type-animation="rellax" data-rellax-speed="10">
-      <p class="address-text"><a href="https://goo.gl/maps/6hYhTbrhmruKVRjw6" target="_blank">
-      Hiran jose<br />
-      Tharayil House, Puthurkara,<br />
-      Ayyanthole P.O, Thrissur - 680003<br />
-      Kerala</a><br />
-      Ph : <a href="tel:+917403476880" class=" sm-scroll"  data-type-animation="rellax" data-rellax-speed="-8">7403476880</a>
-    </p>
-      <a href="" class="social-icon"><img src="./Images/facebook-icon.png"></a>
-      <a href="" class="social-icon"><img src="./images/instagram-icon.png"></a>
-      <a href="" class="social-icon"><img src="./Images/twitter-icon.png"></a>
-      <a href="" class="social-icon"><img src="./Images/linkdin-icon.png"></a>
-      <p class="terms">© 2021 HR Designs<span>.</span><a href="">Terms</a><span>.</span><a href="">Sitemap</a></p>
-      <a class="phone-no" href="tel:+917403476880"> Ph : 7403476880</a>
-    </div>
-
-    <div class="col-sm-4 footer-menu sm-scroll"  data-type-animation="rellax" data-rellax-speed="10">
-      <ul>
-        <li class="go-to-home">Home</li>
-        <li class="go-to-about">About</li>
-        <li class="go-to-works">Works</li>
-        <li class="go-to-skills">Skills</li>
-        <li>Contact</li>
-
-      </ul>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-<!-------------works-description-------------->    
-<div class="container-fluid work-bg">
-  <div class="row  for-scroll sm-scroll">
-  <div class="row work-banner-row  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-9">
-    <p class="work-hd work-banner-hd">/ My Works /</p>
-    <p class="work-caption work-banner-text   sm-scroll"  data-type-animation="rellax" data-rellax-speed="-10">We do amazing<br> 
-      things with <br>
-      amazing People.</p>
-  </div>
-</div>
-
-
-  <div class="row row-details justify-content-md-center">
-    <div class="col-sm-7 col-details">
-    <img class="full-width-image" src="./Images/img-1.jpg" width="100%">
-    <img class="full-width-image" src="./Images/img-2.jpg" width="100%">
-    <img class="full-width-image" src="./Images/img-3.jpg" width="100%">
-    <img class="full-width-image" src="./Images/img-4.jpg" width="100%">
-  </div>
-</div>
-<div class="mobile-des">
-  <p>Think of a perfectly designed website and its incredible functions and shrink it to the size of your palm, you think its impossible, but we can make it happen.
-    <br/><br/>
-    We develop mobile-integrated formats to open access to smartphone and tablet users without sacrificing the beauty of the final product</p>
-</div>
-  <div class="row row-details justify-content-md-center">
-    <div class="col-sm-2  sm-scroll"  data-type-animation="rellax" data-rellax-speed="20">
-      <img class="responsive-image" src="./Images/r-img-1.jpg" width="100%">
-    </div>
-    <div class="col-sm-2  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-20">
-      <img class="responsive-image" src="./Images/r-img-2.jpg" width="100%">
-    </div>
-    <div class="col-sm-2  sm-scroll"  data-type-animation="rellax" data-rellax-speed="10">
-      <img class="responsive-image" src="./Images/r-img-3.jpg" width="100%">
-    </div>
-  </div>
-
-  <div class="row row-next-bg">
-    <div class="col-sm-12">
-    <p class="prev"><img src="./Images/arrow-icon-prev.png">Prev</p>
-    <p class="next">Next<img src="./Images/arrow-icon.png"></p>
-  </div>
-  </div>
- 
-</div>     
-<!-----------------works--------------------->
-<div class="container-fluid work-set">
-  <div class="row works-list">
-    <div class="col-sm-12">
-      <p class="work-hd work-banner-hd">/ My Works /</p>
-      <p class="work-caption work-banner-text  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-10">We do amazing<br> 
-        things with <br>
-        amazing People.</p>
-    </div>
-  </div>
-  
-  <div class="row row-work-12 justify-content-md-center">
-   
- <!-------------------------------->
- <div class="col-sm-5 about-image sm-scroll"  data-type-animation="rellax" data-rellax-speed="30" style="overflow: hidden;">
-    
-  <div class="about-img-cover sm-scroll"  data-type-animation="rellax" data-rellax-speed="-7" style="overflow:hidden;">
-  <img class="about-img sm-scroll site-1"  data-type-animation="rellax" data-rellax-speed="-5" src="./Images/raia.webp">
-</div>
-<div class="scroll-for-text  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" >
-<p class="about-text-0 about-hr-txt">About Me</p>
-<p class="about-text-1 about-hr-txt">Hiran jose</p>
-<p class="about-text-2 about-hr-txt">Front - end / U I Developer</p>
-<p class="about-text-3 about-hr-txt">HTML 5 . Bootstrap . CSS 3 . Jquery . Javascript. <br/>Sharepoint . Photoshop . Adobe XD . AEM . Unily</p>
-</div>
-</div>
- <!-------------------------------->   
- <div class="col-sm-5 about-image sm-scroll"  data-type-animation="rellax" data-rellax-speed="10" style="overflow: hidden;">
-    
-  <div class="about-img-cover sm-scroll"  data-type-animation="rellax" data-rellax-speed="-7" style="overflow:hidden;">
-  <img class="about-img sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" src="./Images/raia.webp">
-</div>
-<div class="scroll-for-text  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" >
-<p class="about-text-0 about-hr-txt">About Me</p>
-<p class="about-text-1 about-hr-txt">Hiran jose</p>
-<p class="about-text-2 about-hr-txt">Front - end / U I Developer</p>
-<p class="about-text-3 about-hr-txt">HTML 5 . Bootstrap . CSS 3 . Jquery . Javascript. <br/>Sharepoint . Photoshop . Adobe XD . AEM . Unily</p>
-</div>
-</div>
-<!--------------------------------------->
-
-
- <!-------------------------------->
- <div class="col-sm-5 about-image sm-scroll"  data-type-animation="rellax" data-rellax-speed="30" style="overflow: hidden;">
-    
-  <div class="about-img-cover sm-scroll"  data-type-animation="rellax" data-rellax-speed="-7" style="overflow:hidden;">
-  <img class="about-img sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" src="./Images/raia.webp">
-</div>
-<div class="scroll-for-text  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" >
-<p class="about-text-0 about-hr-txt">About Me</p>
-<p class="about-text-1 about-hr-txt">Hiran jose</p>
-<p class="about-text-2 about-hr-txt">Front - end / U I Developer</p>
-<p class="about-text-3 about-hr-txt">HTML 5 . Bootstrap . CSS 3 . Jquery . Javascript. <br/>Sharepoint . Photoshop . Adobe XD . AEM . Unily</p>
-</div>
-</div>
- <!-------------------------------->   
- <div class="col-sm-5 about-image sm-scroll"  data-type-animation="rellax" data-rellax-speed="10" style="overflow: hidden;">
-    
-  <div class="about-img-cover sm-scroll"  data-type-animation="rellax" data-rellax-speed="-7" style="overflow:hidden;">
-  <img class="about-img sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" src="./Images/raia.webp">
-</div>
-<div class="scroll-for-text  sm-scroll"  data-type-animation="rellax" data-rellax-speed="-5" >
-<p class="about-text-0 about-hr-txt">About Me</p>
-<p class="about-text-1 about-hr-txt">Hiran jose</p>
-<p class="about-text-2 about-hr-txt">Front - end / U I Developer</p>
-<p class="about-text-3 about-hr-txt">HTML 5 . Bootstrap . CSS 3 . Jquery . Javascript. <br/>Sharepoint . Photoshop . Adobe XD . AEM . Unily</p>
-</div>
-</div>
-<!--------------------------------------->
-
-  
-
-
-  </div>
-</div>
-
-<!--------------------Menu-skills------------------->
-
-
-
-</div>
-</div>
-<div class="container-fluid skills-container">
-  <div class="row">
-    <div class="col-sm-7 skill-7">
-<div class="row">
-  <div class="col-sm-6">
-    <ul class="skill-ul">
-      <li class="ssx">HTML 5</li>
-      <li>CSS3</li>
-      <li>Bootstrap</li>
-      <li>Jquery</li>
-      <li>Javascript</li>
-    </ul>
-</div>
-
-<div class="col-sm-6">
-  <ul class="skill-ul">
-    <li>Photoshop</li>
-    <li>AEM</li>
-    <li>Unily</li>
-    <li>XD</li>
-  </ul>
-</div>
-</div>
-    </div>
-    <div class="col-sm-5 skill-5">
-      <div class="skill-content">
-<p class="my-name">Hi, I am Hiran Jose</p>
-  <p class="about-myself">
-   I'm a front end web designer/developer with 7 years experience. My main areas of my expertise are HTML(5), CSS(3) and Jquery. I create clean, professional, functional websites. I’m a skilled in many areas of front end design and development.
-     
-    <br/><br/>
-    I currently am working as a front end web designer/developer at EY.
-    
-    I like to write semantic, Responsive,  cross browser compatible code by hand that is re-useable, maintainable and easy to understand.
-  </p>
-  <a href="" class="social-icon"><img src="./Images/facebook-icon.png"></a>
-  <a href="" class="social-icon"><img src="./images/instagram-icon.png"></a>
-  <a href="" class="social-icon"><img src="./Images/twitter-icon.png"></a>
-  <a href="" class="social-icon"><img src="./Images/linkdin-icon.png"></a>
-  </div>
-
-  <p class="back-prev">Back</p>
-    </div>
-  </div>
-</div>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/css3-animate-it.js"></script> 
-    <script src="./js/pointer.js"></script>     
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.4.0/smooth-scrollbar.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/436668/scrollAnimationWithOutDependencies.js"></script>
+    <script src="./js/css3-animate-it.js"></script>  
+    <script src="./js/loc-main.js"></script>
     <script>
-      
-scrollAnimation = scrollAnimation({
-    element: '#my-scrollbar'
-});
-
-var smoothScrollBar = scrollAnimation.getScrollBar();
-
-var element = document.querySelector('.sm-scroll');
-smoothScrollBar.addListener(() => {
-    console.log(smoothScrollBar.isVisible(element));    
-});
-init_pointer({
-            
-          })
-          $( document ).ready(function() {
-          
-
-          $('.section-1').on('mousemove', (event) => {
-    $('#pointer-ring').css({"width": "40px", "height": "40px", "background-color": "rgba(255,255,255,0)"}).removeClass("sc");
-    $('#pointer-dot').fadeIn();
-    $('#pointer-ring').html("")
-    
-  });
-          $('.section-2').mouseover(function(){
-          
-            $('#pointer-ring').addClass("sc")
-    $('#pointer-ring').css({"width": "70px", "height": "70px", "background-color": "rgba(255,255,255,.5)"});
-    $('#pointer-ring').html("<p>About</p>")
-    $('#pointer-dot').fadeOut();
-    
-  });      
-    $('.section-3').on('mousemove', (event) => {
-      $('#pointer-ring').addClass("sc")
-    $('#pointer-ring').css({"width": "70px", "height": "70px", "background-color": "rgba(255,255,255,.5)"});
-    $('#pointer-ring').html("<p class='click'>Click<br/>Here</p>")
-    $('#pointer-dot').fadeOut();
-    
-  });
-
-  $('.section-4').mouseover(function(){
-      $('#pointer-ring').addClass("sc")
-    $('#pointer-ring').css({"width": "70px", "height": "70px", "background-color": "rgba(255,255,255,.5)"});
-    $('#pointer-ring').html("<p>Contact</p>")
-    $('#pointer-dot').fadeOut();
-    
-  });
-  
-  $('.work-bg, .work-set, .col-sm-5.skill-5').mouseover(function(){
-      $('#pointer-ring').removeClass("sc")
-    $('#pointer-ring').css({"width": "30px", "height": "30px", "background-color": "rgba(255,255,255,0)", "border": "2px solid #ffffff"});
-    $('#pointer-ring').html("")
-    $('#pointer-dot').fadeIn();
-    
-  });
-  
-
-    $('.skill-ul li,  col-sm-7.skill-7, .contact-me').mouseover(function () {
-      $('#pointer-ring').addClass("sc")
-      $('#pointer-ring').css({ "width": "70px", "height": "70px", "background-color": "rgba(255,255,255,1)", "mix-blend-mode": "difference" });
-      $('#pointer-dot').fadeOut();
-    });
-    $('.contact-me').mouseover(function () {
-      $('#pointer-ring').addClass("sc")
-      $('#pointer-ring').css({ "width": "40px", "height": "40px", "background-color": "#ffffff", "mix-blend-mode": "difference" });
-      $('#pointer-dot').fadeOut();
-    });
-    $('.call-icon').mouseover(function () {
-      $('#pointer-ring').html("<p class='contact-hover'>Ph : +91 7403476880</p>")
-    });
-    $('.resume-icon').mouseover(function () {
-      $('#pointer-ring').html("<p class='contact-hover'>View Resume</p>")
-    });
-    $('.mail-icon').mouseover(function () {
-      $('#pointer-ring').html("<p class='contact-hover'>contact.hiranjose@gmail.com</p>")
-    });
-
-    $('.main-button').mouseover(function () {
-        $('#pointer-ring').addClass("ddd")
-      });
-      setTimeout(function () {
-        $(".call-icon").css({ "opacity": "0.3" });
-      }, 500)
-      setTimeout(function () {
-        $(".mail-icon").css({ "opacity": "0.3" });
-      }, 1000)
-      setTimeout(function () {
-        $(".resume-icon").css({ "opacity": "0.3" });
-      }, 1500)
-
-      setTimeout(function () {
-        $(".intro-overlay").css({ "left": "80%" });
-      }, 1000)
-      setTimeout(function () {
-        $(".intro-quote").fadeOut();
-      }, 5000)
-      setTimeout(function () {
-        $(".delay-60").css({ "opacity": "1" });
-      }, 6000)
-      setTimeout(function () {
-        $(".section-1-text").removeClass("text-delay");
-      }, 8100)
-  
-/*section hide and show*/
-
-//$(".section-3.work-section").click(function() {
- //$(".section-col-12").hide();
- //$(".work-set").fadeIn();
- 
-  //$("#my-scrollbar").animate({ scrollTop: 0 }, "slow");
-  //return false;
-
-//});
-
-
-  $('.section-3.work-section, .go-to-works').bind('click', function(event) {
-     $(".section-col-12, .skills-container, .work-bg").hide();
- $(".work-set").fadeIn();
- smoothScrollBar.scrollTo(0, 10, 100);
-  });
-
-  $('.view-skill, .click-to-skill, .go-to-skills').bind('click', function(event) {
-     $(".section-col-12, .work-set,  .work-bg").hide();
- $(".skills-container").fadeIn();
- //smoothScrollBar.scrollTo(0, 0, 100);
-  });
-
-  $('p.back-prev').bind('click', function(event) {
-     $(".skills-container, .work-bg").hide();
- $(".section-col-12").fadeIn();
- smoothScrollBar.scrollTo(0, 10, 100);
-  });
-  $('.back-home').bind('click', function(event) {
-     $(".skills-container, .work-set, .work-bg").hide();
- $(".section-col-12").fadeIn();
-    smoothScrollBar.scrollTo(0, 10, 100);
-  });
-  $('.site-1').bind('click', function(event) {
-     $(".skills-container, .work-set, .section-col-12").hide();
- $(".work-bg").fadeIn();
-    smoothScrollBar.scrollTo(0, 10, 100);
-  });
-  
-  $('.go-to-about').bind('click', function(event) {
-    $(".skills-container, .work-set, .work-bg").hide();
-    $(".section-col-12").fadeIn();
-    smoothScrollBar.scrollTo(0, 700, 1000);
-  });
-
-$('.go-to-home').bind('click', function(event) {
- 
-    smoothScrollBar.scrollTo(0, 10, 1000);
-  });
-});
-  
       </script>
   </body>
 </html>
