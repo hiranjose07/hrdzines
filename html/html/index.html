@@ -510,15 +510,15 @@ init_pointer({
   });
 
   $('.view-skill, .click-to-skill, .go-to-skills').bind('click', function(event) {
-     $(".section-col-12, .work-set,  .work-bg").hide();
+     $(".section-col-12, .work-set,  .work-bg").css({ "opacity": "0" });
  $(".skills-container").fadeIn();
  //smoothScrollBar.scrollTo(0, 0, 100);
   });
 
   $('p.back-prev').bind('click', function(event) {
     $(".skills-container, .work-set, .work-bg").hide();
- $(".section-col-12").fadeIn();
-    smoothScrollBar.scrollTo(0, 10, 100);
+    $(".section-col-12, .work-set,  .work-bg").css({ "opacity": "1" });
+    smoothScrollBar.scrollTo(0, 10, 1000);
 
 
   });
