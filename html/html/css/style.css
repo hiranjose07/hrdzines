@@ -309,19 +309,22 @@ line-height: 1vw;}
 .for-scroll{margin: 0px; height: 100vh; overflow: hidden;}
 .scroll-for-text{margin-top: 4vw;}
 .intro-quote{position: fixed; height: 100vh; width: 100%; overflow: hidden; z-index: 100; background-color: #000000;}
-.intro-quote p{position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);     color: #ffffff;
-font-family: 'Graphik-lite';
-font-size: 1.4vw;}
-.intro-quote img{position: absolute;
-top: 50%;
-left: 20%;
-transform: translate(-50%, -50%); width: 100%;   -webkit-transition: all 4s ease-in-out;
-  -moz-transition: all 4s ease-in-out;
-  -o-transition: all 4s ease-in-out;
-  transition: all 4s ease-in-out;}
+.intro-quote p{     color: #ffffff;
+  font-family: 'Graphik-lite';
+  font-size: 1.4vw;
+  background-color: #000;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: absolute;
+  padding-top: 47vh;  mix-blend-mode: multiply; }
+.intro-quote img{width: 50vw; top: 50%;
+  height: auto;position: absolute;
+left: 10%;  -webkit-transition: all 8s ease-in-out;
+  -moz-transition: all 8s ease-in-out;
+  -o-transition: all 8s ease-in-out;
+  transition: all 8s ease-in-out; transform: translate(-50%, -50%);}
   .intro-text.text-delay{opacity: 0;  -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;

@@ -2,6 +2,7 @@
 
 /*max-1200*/
 @media only screen and (max-width: 1220px) {
+  .intro-quote p{font-size: 20px;}
   .row-details { padding: 40px 30px 30px 30px;}
   .row-details .col-sm-2{max-width: 26% !important; min-width: 26% !important;}
   #pointer-ring{display: none !important;}
@@ -195,7 +196,10 @@ margin-left: 10px;
 
 /*max-992*/
 @media only screen and (max-width: 992px) {
-  
+
+  .intro-quote img{
+  left: -10%; }
+  .intro-quote p{padding-left: 20px; padding-right: 20px;}
 .row-work-12 {
     padding: 5vw 6vw 3vw 6vw;
 }
@@ -223,6 +227,7 @@ margin-left: 10px;
 }
 /*max-768*/
 @media only screen and (max-width: 768px) {
+  .intro-quote img{width: 300px;}
   .work-banner-row{background-position: center;}
   .section-1{background-image: url(../Images/sec-bg-mobile.png);}
   .section-2 {
@@ -270,6 +275,11 @@ p.section-1-text:nth-child(2) {
   }
  /*max-575*/
  @media only screen and (max-width: 575px) {
+  .intro-quote p{font-size: 4.7vw;}
+  .intro-quote p {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
   span.say-hello {
     background-color: rgba(255, 255, 255, .15);
   }
@@ -316,5 +326,6 @@ p.section-1-text:nth-child(2) {
       margin: 25px 0 20px 0;  line-height: 40px;
       padding: 0 20px;
     }
+   
   
 }
