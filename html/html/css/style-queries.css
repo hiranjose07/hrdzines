@@ -275,6 +275,8 @@ p.section-1-text:nth-child(2) {
   }
  /*max-575*/
  @media only screen and (max-width: 575px) {
+  .intro-quote img{
+    left: -70%; }
   .intro-quote p{font-size: 4.7vw;}
   .intro-quote p {
     padding-left: 3vw;
