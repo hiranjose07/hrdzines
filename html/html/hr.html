@@ -67,8 +67,10 @@
       <div class="resume-icon view-all"><img data-src="./Images/resume.png" class="lazyload"></div>
     </div>
     <div class="intro-quote">
+      <div class="fg"></div>
+      <img class="intro-overlay" src="./Images/intro.png">
       <p>“Good art inspires; Good design motivates.” - Otl Aicher</p>
-      <img class="intro-overlay lazyload" data-src="intro-bg.png">
+      
     </div>
     <div id="my-scrollbar">
       <div class="scroll-content">
@@ -391,7 +393,21 @@
     <script src="./js/smooth-scrollbar.js"></script>
     <script src="./js/scrollAnimationWithOutDependencies.js"></script>
     <script>
-      
+             setTimeout(function () {
+        $(".call-icon").css({ "opacity": "0.3" });
+      }, 500)
+      setTimeout(function () {
+        $(".mail-icon").css({ "opacity": "0.3" });
+      }, 1000)
+      setTimeout(function () {
+        $(".resume-icon").css({ "opacity": "0.3" });
+      }, 1500)
+
+      setTimeout(function () {
+        $(".intro-overlay").css({ "left": "140%" });
+      }, 1000)
+    // $(".intro-overlay, .intro-quote p").hide();
+
 scrollAnimation = scrollAnimation({
     element: '#my-scrollbar'
 });
@@ -405,8 +421,18 @@ smoothScrollBar.addListener(() => {
 init_pointer({
             
           })
+
           $( document ).ready(function() {
-          
+     
+      setTimeout(function () {
+        $(".intro-quote").fadeOut();
+      }, 6000)
+      setTimeout(function () {
+        $(".delay-60").css({ "opacity": "1" });
+      }, 6000)
+      setTimeout(function () {
+        $(".section-1-text").removeClass("text-delay");
+      }, 6100)
 
           $('.section-1').on('mousemove', (event) => {
     $('#pointer-ring').css({"width": "40px", "height": "40px", "background-color": "rgba(255,255,255,0)"}).removeClass("sc");
@@ -470,28 +496,7 @@ init_pointer({
     $('.main-button').mouseover(function () {
         $('#pointer-ring').addClass("ddd")
       });
-      setTimeout(function () {
-        $(".call-icon").css({ "opacity": "0.3" });
-      }, 500)
-      setTimeout(function () {
-        $(".mail-icon").css({ "opacity": "0.3" });
-      }, 1000)
-      setTimeout(function () {
-        $(".resume-icon").css({ "opacity": "0.3" });
-      }, 1500)
-
-      setTimeout(function () {
-        $(".intro-overlay").css({ "left": "80%" });
-      }, 1000)
-      setTimeout(function () {
-        $(".intro-quote").fadeOut();
-      }, 5000)
-      setTimeout(function () {
-        $(".delay-60").css({ "opacity": "1" });
-      }, 6000)
-      setTimeout(function () {
-        $(".section-1-text").removeClass("text-delay");
-      }, 8100)
+    
   
 /*section hide and show*/
 
