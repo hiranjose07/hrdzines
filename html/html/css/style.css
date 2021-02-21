@@ -324,7 +324,7 @@ line-height: 1vw;}
 left: 10%;  -webkit-transition: all 8s ease-in-out;
   -moz-transition: all 8s ease-in-out;
   -o-transition: all 8s ease-in-out;
-  transition: all 8s ease-in-out; transform: translate(-50%, -50%);}
+  transition: all 8s ease-in-out; transform: translate(0%, -50%);}
   .intro-text.text-delay{opacity: 0;  -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
